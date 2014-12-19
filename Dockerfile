@@ -1,4 +1,5 @@
 FROM base/archlinux:latest
+MAINTAINER Benjamin Thuillier <benjaminthuillier@gmail.com>
 
 ENV LEIN_ROOT true
 
