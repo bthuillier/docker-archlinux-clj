@@ -1,9 +1,9 @@
-FROM base/archlinux:latest
+FROM bthuillier/openjdk8:latest
 MAINTAINER Benjamin Thuillier <benjaminthuillier@gmail.com>
 
 ENV LEIN_ROOT true
 
-RUN pacman --noconfirm -Sy wget jdk8-openjdk openssl ca-certificates
+RUN pacman --noconfirm -Sy wget openssl ca-certificates
 
 RUN wget -q -O /usr/bin/lein \
     https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein \
