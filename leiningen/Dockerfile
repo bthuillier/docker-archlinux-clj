@@ -3,7 +3,7 @@ MAINTAINER Benjamin Thuillier <benjaminthuillier@gmail.com>
 
 ENV LEIN_ROOT true
 
-RUN pacman --noconfirm -S wget openssl
+RUN pacman --noconfirm -S wget
 
 RUN wget -q -O /usr/bin/lein \
     https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein \
